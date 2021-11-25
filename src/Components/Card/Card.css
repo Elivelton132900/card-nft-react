@@ -1,0 +1,110 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueMainBG: hsl(217, 54%, 11%);
+    --veryDarkBlueCardBG: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+}
+
+main img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 30;
+    transition: 200ms ease-in-out;
+}
+
+main {
+    position: relative;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+div .descricao {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+div .descricao h2 {
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 5%;
+    transition: 300ms ease;
+}
+div .descricao p {
+    color: white;
+    margin: 0px 5%;
+    margin-top: 10px;
+    color: var(--softBlue);
+}
+
+.infos {
+    margin: 0px 5%;
+    display: flex;
+    justify-content: space-between
+    ;
+    margin-top: 15px;
+    color: var(--softBlue);
+}
+
+.infos .cripto {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.footer {
+    color: var(--softBlue);
+    margin: 20px 5% 0;
+    border-top: 1px solid var(--veryDarkBlueLine);
+}
+
+.footer .span {
+    margin-left: 15px;
+}
+
+.footer .container {
+    margin-top: 15px;
+    display: flex;
+}
+
+.footer .container img {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.footer .container .spanNome {
+    color: white;
+    transition: 300ms ease;
+}
+
+.viewContainer{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.viewContainer img:hover{
+    opacity: 0.5;
+    background: hsl(178, 100%, 50%);
+}
+
+.cor {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(178, 100%, 50%);
+}
+
+.descricao h2:hover, .container .spanNome:hover {
+    color: var(--cyan);
+}
